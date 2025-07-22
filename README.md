@@ -1,16 +1,66 @@
-# smart_shop
+# 🛍️ Smart Shop – Mini E-commerce App (Flutter)
 
-A new Flutter project.
+Welcome to **Smart Shop**, a lightweight yet powerful mini e-commerce app built using **Flutter**. This project demonstrates key mobile development concepts like state management, API integration, theme persistence, and routing — all wrapped in a clean, user-friendly interface.
 
-## Getting Started
+> **✨ Bonus:** I used my own custom API from [Dermeze](https://dermeze.onrender.com/api/) 
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
+### 🔐 Authentication
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* **Login/Register** screen with `TextFormField` + validation
+* Stores login state using `SharedPreferences`
+* Supports dummy login or real API auth
+* **Splash Screen** with GIF animation that checks login status and redirects accordingly
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🏠 Home Page
+
+* Fetches & displays product list from `https://dermeze.onrender.com/api/products/`
+* Includes product **name**, **price**, and **image**
+* **Favorites** toggle via heart icon (saved with `Provider` + `SharedPreferences`)
+* ⭐ Displays rating stars (from `rating.rate`)
+* 🧐 Smart product suggestions based on same category 'https://dermeze.onrender.com/api/categories/' (extra feature!)
+* 🔀 Pull-to-refresh with `RefreshIndicator`
+* �� Sorting: price (low→high, high→low), rating
+
+### 🛒 Cart Page
+
+* Shows all added items with:
+  * Quantity
+  * Total price
+  * Ratings
+  * options for adding or removing quantity/products
+* Dynamic cart **badge** in AppBar
+* Managed using `Provider` for reactive state
+
+### 🎨 Theme Switch
+* Toggle between **Dark** & **Light** mode
+* Uses `SharedPreferences` to remember your theme
+
+### 📂 Drawer Navigation
+* Clean drawer UI to navigate between:
+  * Home
+  * Cart
+  * Profile
+  * Favorites
+  * Logout
+
+### 🔓 Logout
+* Clears login credentials from `SharedPreferences`
+* Redirects back to login screen
+
+## 🔗 API Endpoints
+
+All data is served via my custom REST API:
+
+* 🛒 Products: `https://dermeze.onrender.com/api/products/`
+* 🤝 Categories: `https://dermeze.onrender.com/api/categories/`
+
+## 📹 Optional Video Walkthrough
+
+> *If you have a short video showing project flow, embed the link here (Drive).*
+https://drive.google.com/file/d/1mXfYBI-CUl3Sm-sEzqyt9zQYJUg1RCv_/view
+---
+
+
