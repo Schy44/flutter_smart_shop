@@ -2,6 +2,10 @@
 
 Welcome to **Smart Shop**, a lightweight yet powerful mini e-commerce app built using **Flutter**. This project demonstrates key mobile development concepts like state management, API integration, theme persistence, and routing — all wrapped in a clean, user-friendly interface.
 
+## 📹 A Video Walkthrough
+https://drive.google.com/file/d/1RJYxb6sr1DXNK1l_UMAAaq5T1sbD14Xf/view?usp=sharing
+---
+
 > **✨ Bonus:** I used my own custom API from [Dermeze](https://dermeze.onrender.com/api/) 
 
 ---
@@ -57,10 +61,6 @@ All data is served via my custom REST API:
 * 🛒 Products: `https://dermeze.onrender.com/api/products/`
 * 🤝 Categories: `https://dermeze.onrender.com/api/categories/`
 
-## 📹 Optional Video Walkthrough
 
-> *If you have a short video showing project flow, embed the link here (Drive).*
-https://drive.google.com/file/d/1mXfYBI-CUl3Sm-sEzqyt9zQYJUg1RCv_/view
----
 
 
